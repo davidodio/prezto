@@ -12,29 +12,5 @@ fi
 
 # Customize to your needs...
 
-alias dn="dotnet"
-
 alias cdc="cd ~/Code"
-alias cdp="cd ~/Code/projects"
-alias cds="cd ~/Code/scratch"
-
-alias shconfig="subl ~/.zshrc"
-alias shreset="source ~/.zshrc"
-
-alias -s md=Ulysses.app
-alias -s sln=Rider.app
-
-https-server() {
-	SITE=$(pwd)
-	pushd ~/.yarn-global
-	yarn http-server --ssl --cert ~/.localhost-ssl/te-localhost.crt --key ~/.localhost-ssl/te-localhost.key $SITE
-	popd
-}
-
-# asdf
-# https://github.com/asdf-vm/asdf/issues/428
-. $(brew --prefix asdf)/asdf.sh
-
-# yarn-global
-export PATH="$HOME/.yarn-global:$PATH"
-
+alias pn=pnpm
